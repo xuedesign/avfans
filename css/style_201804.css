@@ -1,8 +1,8 @@
 /********************************************
 *
-* @project    pandroa
+* @project    AVfans disclaimer
 * @Author     Elmo Wu
-* @version    1.0 - 201801
+* @version    1.0 - 201804
 *********************************************/
 
 html { font-size:62.5% }
@@ -29,143 +29,116 @@ image{border:0}
 
 #wrap{ 
     display:block;
-    position: relative;
-    width:1748px;
-    height: 1212px;
+    width:1200px;
+    min-height: 1664px;
     margin:0 auto;
-    background: url(../images/bg.jpg) no-repeat }
-h1{
+    background: url(../images/bg_page.jpg) no-repeat}
+#box_top,
+#box_middle,
+#box_down,
+#box_footer{
     display: block;
-    margin: 0 auto 0 auto;
-    padding-top: 50px;
-    width: 740px;
-    height: 135px;
-    font-size: 3.3rem;
-    font-weight: normal;
-    letter-spacing: 3px;
-    color:#a4e1ec;
-    text-align: center}
-#logo{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0}
+#box_top{
+    height: 644px;
+    /*background: url(../images/bg_01.jpg) no-repeat*/}
+#box_middle{
+    height: 566px;
+    padding-top: 25px;
+    /*background: url(../images/bg_02.jpg) no-repeat*/}
+#box_down{
+    height: 454px;
+    /*background: url(../images/bg_03.jpg) no-repeat*/}
+#box_footer{
+    height: 138px;
+    padding-top: 36px;
+    background: #1f1f1f}
+#ticrf-left,
+#ticrf-right{
     display: block;
     position: absolute;
-    top: 481px;
-    left: 651px;
-    background: url(../images/logo.jpg) no-repeat;
-    width: 454px;
-    height: 242px;
+    top:392px;
+    width: 181px;
+    height: 252px;
+    padding-top: 195px;
+    font-size: 1.6rem;
+    line-height: 22px;
+    color: black}
+#ticrf-left{
+    left: 60px;
+    padding-left: 30px;
+    background: url(../images/bg_trcif-01.png) no-repeat}
+#ticrf-right{
+    right: 60px;
+    padding-left: 20px;
+    background: url(../images/bg_trcif-02.png) no-repeat}
+
+#disclaimer-info{
+    display: block;
+    width: 1030px;
+    /*height: 530px;*/
+    margin: 0 auto 30px auto;
+    padding: 62px 60px 60px;
+    background: rgba(256, 256, 256, .3);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px}
+#disclaimer-info h1{
+    display: block;
+    position: absolute;
+    top: -30px;
+    left: 418px;
+    width: 364px;
+    height: 90px;
+    background: url(../images/title.png) no-repeat;
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden}
-#box-mushroomer{
+#disclaimer-info p,
+#disclaimer-info li{
+    font-size: 2.05rem;
+    line-height: 40px;
+    color: black}
+#disclaimer-info li{
+    padding-top: 20px}
+
+#link-01 a,
+#link-02 a{
     display: block;
-    position: absolute;
-    top:135px;
-    left: 240px;
-    background: url(../images/bg_mushroomer.jpg) no-repeat;
     width: 394px;
-    height: 293px;
-    overflow: hidden}
-#mushroomer{
-    display: block;
-    position: absolute;
-    top:-10px;
-    left: 0px;
-    width: 257px;
-    height: 293px;
-    background: url(../images/mushroomer.png) no-repeat}
-#cover{
-    display: block;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: 99;
-    background: url(../images/cover_mushroomer.png) no-repeat;
-    width: 345px;
-    height: 293px}
-nav{
-    display: block;
-    position: absolute;
-    top:428px;
-    left: 188px;
-    width: 448px;
-    height: 760px}
-.nav-01 a, .nav-01 a:hover, .nav-02 a, .nav-02 a:hover, .nav-03 a, .nav-03 a:hover, .nav-04 a, .nav-04 a:hover{
-    display: block;
+    height: 394px;
+    margin: 25px 0 0 135px;
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
-    background: url(../images/bg_nav.png) no-repeat}
-.nav-01 a{
-    width: 448px;
-    height: 141px;
-    background-position: 0 0}
-.nav-01 a:hover{background-position: -448px 0}
-.nav-02 a{
-    width: 448px;
-    height: 155px;
-    background-position: 0 -141px}
-.nav-02 a:hover{ background-position: -448px -141px}
-.nav-03 a{
-    width: 448px;
-    height: 173px;
-    background-position: 0 -296px}
-.nav-03 a:hover{ background-position: -448px -296px}
-.nav-04 a{
-    width: 448px;
-    height: 149px;
-    background-position: 0 -468px}
-.nav-04 a:hover{ background-position: -448px -468px}
-#footer{
+    transition-duration:1s}
+#link-01 a{
+    background: url(../images/btn_link-01.png) no-repeat}
+#link-02 a{
+    background: url(../images/btn_link-02.png) no-repeat}
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  /*box-shadow: 0 0 1px transparent;*/
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1)}
+
+#box_footer p{
     display: block;
-    position: absolute;
-    top:1090px;
-    left: 456px;
-    width: 830px;
+    width: 88%;
+    margin: 0 auto;
     font-size: 1.6rem;
-    line-height: 2.2rem;
-    color: #fff;
-    text-align: center}
-#footer span{
-    font-size: 1.3rem;
-    color: #a4e1ec}
-
-
-
-.animated {
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both}
-.animated.infinite {
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite}
-.animated.hinge {
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s}
-
-
-
-@keyframes float {
-  0% {
-    transform: translate3d(0, -30px, 0);
-  }
-
-  50% {
-    transform: translate3d(0, 0, 0);
-  }
-    
-   100% {
-    transform: translate3d(0, -30px, 0);
-  }
-}
-
-.myfloat{
-   -webkit-animation-name: float;
-   animation-name: float;
-    -webkit-animation-duration: 1500ms;
-    -moz-animation-duration: 1500ms;
-	animation-duration: 1500ms;
-   -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite 
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: white}
+#box_footer span{ margin-left: 10px}
